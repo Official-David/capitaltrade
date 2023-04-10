@@ -89,7 +89,7 @@
                         <div class="col-md-12 col-lg-3 footer-logo">
                             <img src="{{ asset('app/img/user/header-logo-LxR0VE.png') }}" alt="footer-logo"
                                 width="180" class="mb-1 d-block">
-                            <p>11 Dupont Cir NW, Washington, DC 20036, United States</p>
+                            <!-- <p>11 Dupont Cir NW, Washington, DC 20036, United States</p> -->
                             <a class="lead footer-email"
                                 href="mailto:{{ config('custom.support_email') }}">{{ config('custom.support_email') }}</a>
                         </div>
@@ -105,7 +105,7 @@
                                 </ul>
                                 <!-- social media begin -->
                                 <div class="social-media-list small hstack gap-3 ms-lg-5 order-first order-xl-last">
-                                    <div><a href="https://t.me/FundriseCoin" target="_blank" class="color-telegram text-decoration-none"><i
+                                    <div><a href="https://t.me/getcapitaltrade" target="_blank" class="color-telegram text-decoration-none"><i
                                                 class="fab fa-telegram"></i> Telegram</a></div>
                                 </div>
                                 <!-- social media end -->
