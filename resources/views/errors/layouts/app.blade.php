@@ -8,9 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="FundRiseCoin your perfect investment broker.">
-    <meta name="keywords" content="Fundrise, FundRise, Fundrisecoin, fundrisecoin">
-    <meta name="author" content="FundRiseCoin">
+    <meta name="description" content="Capital Trade your perfect investment broker.">
+    <meta name="keywords" content="capitaltrade.com, getcapital.com, getcapitaltrade">
+    <meta name="author" content="getcapitaltrade.com">
 
     <!-- [Favicon] icon -->
     <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">

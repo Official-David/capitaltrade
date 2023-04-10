@@ -2,7 +2,7 @@
 {{-- Header --}}
 <x-slot:header>
 <x-mail::header :url="config('app.url')">
-<img src="http://fundrisecoin.com/assets/images/logo-dark.png" width="180" alt="{{ config('app.name') }} Logo">
+<img src="http://getcapitaltrade.com/assets/images/logo-dark.png" width="180" alt="{{ config('app.name') }} Logo">
 </x-mail::header>
 </x-slot:header>
 
