@@ -1,0 +1,34 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use App\Enums\UserRole;
+use Illuminate\Support\Str;
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+class AdminSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run()
+    {
+       $user = User::Create([
+            'first_name' => 'Super',
+            'last_name' => 'Admin',
+            'email' => config('custom.support_email'),
+            'username' => Str::random(5),
+            'referrer_id' => null,
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+        ]);
+
+        $user->assignRole('admin');
+
+        return $user;
+
+    }
+}
