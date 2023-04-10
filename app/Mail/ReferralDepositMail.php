@@ -32,7 +32,7 @@ class ReferralDepositMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('accountsdepartent@fundrisecoin.com', 'FundRiseCoin'),
+            from: new Address(config('custom.account_email'), config('app.name')),
             subject: 'Referral Deposit Notification',
         );
     }
