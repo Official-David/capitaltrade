@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Invest withfundrisecoin">
-    <meta name="keywords" content="fundrise, FundRiseCoin, fundrisecoin, Fundrise">
-    <meta name="author" content="FundRiseCoin">
+    <meta name="keywords" content="capitaltrade.com, getcapital.com, getcapitaltrade">
+    <meta name="author" content="getcapitaltrade.com">
     <meta name="theme-color" content="#1A5C96" />
     <!-- critical preload -->
     <link rel="preload" href="{{ asset('app/js/vendors/bootstrap.bundle.min.js') }}" as="script">
