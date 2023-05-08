@@ -45,8 +45,11 @@ class InvestmentController extends Controller
             'amount' => 'required|numeric|min:1',
         ]);
 
-        $minimumDeposit = Package::where('id', $id)->pluck('minimum_deposit')->all();
-        $maximumDeposit = Package::where('id', $id)->pluck('maximum_deposit')->all();
+        $minimumDeposit = Package::where('id', $id)
+        ->pluck('minimum_deposit')->all();
+        $maximumDeposit = Package::where('id', $id)
+        ->pluck('maximum_deposit')
+        ->all();
     
 
         if ($request->input('amount') > Auth::User()->account_balance) {
@@ -59,6 +62,7 @@ class InvestmentController extends Controller
 
         if ($request->input('amount') > $maximumDeposit[0]) {
             return redirect()->back()->withErrors(['maximumInvestmentError' => 'Maximum investment capital exceeded!']);
+            
         }
 
         $investment = new Investment;
