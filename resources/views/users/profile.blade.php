@@ -675,9 +675,9 @@
                                                                     </td>
                                                                     <td class="text-capitalize">{{ trim($user->getRoleNames()[0]) }}</td>
                                                                     <td><span
-                                                                            class="badge bg-light-success  f-12 text-capitalize">lol</span>
+                                                                            class="badge bg-light-success  f-12 text-capitalize">{{ $user->status }}</span>
                                                                     </td>
-                                                                    <td class="text-capitalize">{{ $user->created_at }}</td>
+                                                                    <td class="text-capitalize">lol</td>
                                                                     <td class="text-center">
                                                                         <ul class="list-inline me-auto mb-0">
                                                                             <li class="list-inline-item align-bottom"
