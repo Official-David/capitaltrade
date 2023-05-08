@@ -203,60 +203,7 @@
             <!-- TradingView Widget END -->
         </div>
     </section>
-    <!-- section content end -->
-
-    <section class="py-5 in-cirro-14">
-        <div class="justify-content-center row d-flex">
-            <!-- <h5 class="text-center
-        ">Hello</h5> -->
-            <div class="col-md-12 col-lg-4">
-                <h4 class="fw-bold">LIVE: Latest Deposit</h4>
-                <table class="table table-striped mt-n1 mb-2">
-                    {{-- <thead>
-                        <tr>
-                            <th class="text-center">Name</th>
-                            <th class="text-center">Wallet name</th>
-                            <th class="text-center">Amount</th>
-                        </tr>
-                    </thead> --}}
-                    <tbody>
-                        @forelse($deposits as $deposit)
-                        <tr>
-                            <td class="text-center">{{ $deposit->users->username}}</td>
-                            <td class="text-center">{{ $deposit->wallet_name}}</td>
-                            <td class="text-center">$@convert($deposit->amount)</td>
-                        </tr>
-                        @empty
-                        @endforelse
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <h4 class="fw-bold">LIVE: Latest Withdrawal</h4>
-                <table class="table table-striped mt-n1 mb-2">
-                    {{-- <thead>
-                        <tr>
-                            <th class="text-center">Name</th>
-                            <th class="text-center">Walet Name</th>
-                            <th class="text-center">Amount</th>
-                        </tr>
-                    </thead> --}}
-                    <tbody>
-                        @forelse($withdrawals as $withdrawal)
-                        <tr>
-                            <td class="text-center">{{ $withdrawal->users->username }}</td>
-                            <td class="text-center">{{ $withdrawal->wallet_name }}</td>
-                            <td class="text-center">$@convert($withdrawal->amount)</td>
-                        </tr>
-                        @empty
-                        @endforelse
-                    </tbody>
-                </table>
-                <!-- <a href="#" class="link-primary text-decoration-none"><small>See Full Shares Table</small></a> -->
-            </div>
-        </div>
-    </section>
-
+    <!-- section content end -->  
 
 </main>
 @endsection
