@@ -90,7 +90,7 @@ class UserController extends Controller
         $users = User::latest()->get(['id', 'first_name', 'last_name', 'email', 'status']);
         $wallets = Wallet::latest()->get();
         $userWallets = UserWallet::where('user_id', Auth::User()->id)->get();
-        return view('users.profile', compact('users', 'wallets', 'userWallets'));
+        return view('users.profile', compact('users', 'wallets', 'userWallets', 'create_at'));
     }
 
     public function viewUserReferrals($id)
